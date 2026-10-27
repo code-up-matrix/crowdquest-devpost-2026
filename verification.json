@@ -1,0 +1,11 @@
+{
+  "product": "crowdquest",
+  "checkedAt": "2026-10-27T10:07:27.873947+00:00",
+  "checkExit": 0,
+  "testCount": 10,
+  "typecheckPassed": true,
+  "productionBuildPassed": true,
+  "liveIntegrationVerified": false,
+  "cloudDeployed": false,
+  "submitted": false
+}

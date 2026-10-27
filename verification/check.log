@@ -1,0 +1,63 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crowdquest-devpost-2026@1.0.0 check
+> npm run typecheck && npm test && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crowdquest-devpost-2026@1.0.0 typecheck
+> tsc --noEmit -p tsconfig.json
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crowdquest-devpost-2026@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /tmp/devpost-event-repositories/crowdquest
+
+
+ Test Files  3 passed (3)
+      Tests  10 passed (10)
+   Start at  11:03:01
+   Duration  1.95s (tests 86%, import 11%, transform 2%, worker 1%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> crowdquest-devpost-2026@1.0.0 build
+> next build --webpack
+
+▲ Next.js 16.3.8 (webpack)
+✓ Running next.config.ts took 25ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.5s
+  Running TypeScript ...
+  Finished TypeScript in 2.5s ...
+  Collecting page data using 8 workers ...
+  Generating static pages using 8 workers (0/11) ...
+  Generating static pages using 8 workers (2/11) 
+  Generating static pages using 8 workers (5/11) 
+  Generating static pages using 8 workers (8/11) 
+✓ Generating static pages using 8 workers (11/11) in 206ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /access
+├ ƒ /api/crowdquest/rounds
+├ ƒ /api/crowdquest/rounds/[id]
+├ ƒ /api/health
+├ ƒ /api/internal/cleanup
+├ ƒ /api/lab/runs
+├ ƒ /api/session
+├ ƒ /api/webhooks/twitch
+├ ○ /history
+└ ƒ /lab/crowdquest/overlay/[id]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
