@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-10-27T17:12:05.852909+00:00",
+  "repository": "code-up-matrix/crowdquest-devpost-2026",
+  "testedSourceCommit": "3aa44cdfcdc31a957f7771bc99d5aae8e581210f",
+  "deploymentId": "dpl_D98SpQkLwNfTVgsFNve2PFTCYy4f",
+  "url": "https://crowdquest-devpost-2026.vercel.app",
+  "database": {
+    "projectId": "bitter-tree-79831403",
+    "productionBranchId": "br-raspy-cake-b9xqa1vp",
+    "database": "app",
+    "runtimeRole": "app_service",
+    "migrated": true,
+    "region": "aws-eu-central-1",
+    "vercelConfigured": true,
+    "permissions": {
+      "rolname": "app_service",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false,
+      "memberships": "{}",
+      "can_create_schema_objects": false,
+      "can_manage_records": true,
+      "tables": "8"
+    }
+  },
+  "verification": {
+    "application": "crowdquest",
+    "url": "https://crowdquest-devpost-2026.vercel.app",
+    "checkedAt": "2026-10-27T17:12:05.852909+00:00",
+    "checks": [
+      {
+        "check": "health endpoint",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "database configured",
+        "passed": true
+      },
+      {
+        "check": "anonymous history denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "foreign origin denied",
+        "passed": true,
+        "evidence": {
+          "status": 403,
+          "expected": 403
+        }
+      },
+      {
+        "check": "invalid access code denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "judge login",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "secure session cookie",
+        "passed": true
+      },
+      {
+        "check": "authenticated database read",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "new judge has isolated empty history",
+        "passed": true
+      },
+      {
+        "check": "unauthorized cleanup denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      },
+      {
+        "check": "authorized expiry cleanup",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "expired fixtures removed",
+        "passed": true,
+        "evidence": {
+          "expired_runs": "1",
+          "old_limits": "1",
+          "old_receipts": "1"
+        }
+      },
+      {
+        "check": "operator login",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "secure session cookie",
+        "passed": true
+      },
+      {
+        "check": "missing sponsor configuration fails clearly",
+        "passed": true,
+        "evidence": {
+          "status": 503,
+          "expected": 503
+        }
+      },
+      {
+        "check": "sponsor blocker accurately named",
+        "passed": true,
+        "evidence": {
+          "missing": "TWITCH_BROADCASTER_ID"
+        }
+      },
+      {
+        "check": "judge cannot create broadcaster round",
+        "passed": true,
+        "evidence": {
+          "status": 403,
+          "expected": 403
+        }
+      },
+      {
+        "check": "workspace logout",
+        "passed": true,
+        "evidence": {
+          "status": 200,
+          "expected": 200
+        }
+      },
+      {
+        "check": "logged-out history denied",
+        "passed": true,
+        "evidence": {
+          "status": 401,
+          "expected": 401
+        }
+      }
+    ],
+    "sponsorIntegrationVerified": false,
+    "syntheticDataOnly": true,
+    "health": {
+      "application": "CrowdQuest",
+      "status": "configuration_required",
+      "missing": [
+        "TWITCH_BROADCASTER_ID"
+      ],
+      "version": "1.0.0"
+    },
+    "productFlowVerified": false,
+    "passed": true
+  },
+  "productionReady": false,
+  "submitted": false
+}
