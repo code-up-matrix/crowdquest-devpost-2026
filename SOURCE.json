@@ -3,7 +3,10 @@
   "sourceCommit": "4093cf1d826e4591f66a0aa507eab5ea5db91544",
   "product": "crowdquest",
   "remoteRepositoryCreated": true,
-  "cloudDeployed": false,
+  "cloudDeployed": true,
   "submitted": false,
-  "repositoryUrl": "https://github.com/code-up-matrix/crowdquest-devpost-2026"
+  "repositoryUrl": "https://github.com/code-up-matrix/crowdquest-devpost-2026",
+  "productionReady": false,
+  "liveIntegrationVerified": false,
+  "deploymentUrl": "https://crowdquest-devpost-2026.vercel.app"
 }

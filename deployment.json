@@ -1,0 +1,28 @@
+{
+  "projectId": "prj_jlsb6CvPALu5VHlo9y9vbQI2Z5Q8",
+  "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+  "deploymentId": "dpl_78RY8KpdH5sDe2YkFAJsnbfKXtjJ",
+  "deploymentCommit": "9ffcecf3de776f8ab631e9d1196c348c466c29d2",
+  "url": "https://crowdquest-devpost-2026.vercel.app",
+  "target": "production",
+  "hostingReady": true,
+  "productionReady": false,
+  "databaseProvisioned": false,
+  "liveIntegrationVerified": false,
+  "submitted": false,
+  "health": {
+    "url": "https://crowdquest-devpost-2026.vercel.app/api/health",
+    "status": 200,
+    "body": {
+      "application": "CrowdQuest",
+      "status": "configuration_required",
+      "missing": [
+        "DATABASE_URL",
+        "TWITCH_BROADCASTER_ID"
+      ],
+      "version": "1.0.0"
+    },
+    "checkedAt": "2026-10-27T15:04:47.467Z"
+  },
+  "lastUpdated": "2026-10-27T15:09:49.954Z"
+}
